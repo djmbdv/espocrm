@@ -1,0 +1,51 @@
+{
+    "name": "Pipeline",
+    "table": "pipeline",
+    "fields": {
+        "id": {
+            "type": "id"
+        },
+        "name": {
+            "type": "varchar",
+            "len": 255,
+            "required": true
+        },
+        "description": {
+            "type": "text"
+        },
+        "order": {
+            "type": "int"
+        },
+        "active": {
+            "type": "bool",
+            "default": true
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true,
+            "fieldManagerParamList": [
+                "useNumericFormat"
+            ]
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true,
+            "fieldManagerParamList": [
+                "useNumericFormat"
+            ]
+        }
+    },
+    "indices": {
+        "primary": {
+            "fields": [
+                "id"
+            ],
+            "primary": true
+        },
+        "name": {
+            "fields": [
+                "name"
+            ]
+        }
+    }
+}

@@ -132,17 +132,17 @@
     {
         "src": "node_modules/summernote/dist/summernote.js",
         "amdId": "summernote",
-        "minify": true
+        "minify": false
     },
     {
         "src": "node_modules/espo-funnel-chart/build/espo-funnel-chart.js",
         "amdId": "espo-funnel-chart",
-        "minify": true
+        "minify": false
     },
     {
         "src": "node_modules/flotr2/flotr2.js",
         "amdId": "flotr2",
-        "minify": true
+        "minify": false
     },
     {
         "src": "node_modules/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.js",
@@ -151,21 +151,21 @@
     {
         "src": "node_modules/cropper/dist/cropper.js",
         "amdId": "cropper",
-        "minify": true
+        "minify": false
     },
     {
         "src": "node_modules/cronstrue/dist/cronstrue-i18n.js",
-        "minify": true,
+        "minify": false,
         "amdId": "cronstrue"
     },
     {
         "src": "node_modules/exif-js/exif.js",
-        "minify": true,
+        "minify": false,
         "amdId": "exif-js"
     },
     {
         "src": "node_modules/jsbarcode/dist/JsBarcode.all.js",
-        "minify": true,
+        "minify": false,
         "amdId": "jsbarcode"
     },
     {
@@ -175,7 +175,7 @@
     {
         "src": "node_modules/turndown/lib/turndown.browser.umd.js",
         "amdId": "turndown",
-        "minify": true
+        "minify": false
     },
     {
         "name": "ace-builds",

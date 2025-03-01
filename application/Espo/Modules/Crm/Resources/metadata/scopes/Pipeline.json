@@ -1,0 +1,8 @@
+{
+    "entity": true,
+    "tab": true,
+    "layouts": true,
+    "acl": false,
+    "module": "Crm",
+    "object": false
+}

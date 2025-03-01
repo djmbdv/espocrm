@@ -93,6 +93,7 @@ return [
         'Account',
         'Contact',
         'Lead',
+        'Pipeline',
         'Opportunity',
     ],
     'tabList' => [
@@ -104,6 +105,7 @@ return [
         'Account',
         'Contact',
         'Lead',
+        'Pipeline',
         'Opportunity',
         (object) [
             'type' => 'divider',

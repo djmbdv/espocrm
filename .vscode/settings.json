@@ -472,5 +472,6 @@
             ],
             "url": "./schema/metadata/app/webSocket.json"
         }
-    ]
+    ],
+    "php.version": "8.3"
 }

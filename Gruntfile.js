@@ -179,13 +179,13 @@ module.exports = grunt => {
 
         uglify: {
             options: {
-                sourceMap: true,
+                sourceMap: false,
                 output: {
                     comments: /^!/,
                 },
                 beautify: false,
-                mangle: true,
-                compress: true
+                mangle: false,
+                compress: false,
             },
             bundle: {
                 options: {
@@ -201,6 +201,7 @@ module.exports = grunt => {
         copy: {
             options: {
                 mode: true,
+
             },
             frontend: {
                 expand: true,
@@ -516,17 +517,17 @@ module.exports = grunt => {
     grunt.loadNpmTasks('grunt-replace');
 
     grunt.registerTask('internal', [
-        'less',
-        'cssmin',
+    //    'less',
+    //   'cssmin',
         'prepare-lib-original',
         'clean:transpiled',
         'transpile',
         'bundle',
         'bundle-templates',
-        'uglify:bundle',
+   //    'uglify:bundle',
         'copy:frontendLib',
         'prepare-lib',
-        'uglify:lib',
+     //   'uglify:lib',
     ]);
 
     const offline = [

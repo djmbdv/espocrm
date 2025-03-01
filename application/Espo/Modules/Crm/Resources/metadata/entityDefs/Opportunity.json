@@ -5,6 +5,9 @@
             "required": true,
             "pattern": "$noBadCharacters"
         },
+        "pipeline": {
+            "type": "link"
+        },
         "amount": {
             "type": "currency",
             "required": true,
@@ -192,8 +195,8 @@
         "lastStage": {
             "type": "enum",
             "view": "crm:views/opportunity/fields/last-stage",
-            "customizationOptionsDisabled": true,
-            "customizationDefaultDisabled": true,
+            "customizationOptionsDisabled": false,
+            "customizationDefaultDisabled": false,
             "customizationOptionsReferenceDisabled": true
         },
         "probability": {
@@ -283,6 +286,10 @@
         }
     },
     "links": {
+        "pipeline": {
+            "type": "belongsTo",
+            "entity": "Pipeline"
+        },
         "createdBy": {
             "type": "belongsTo",
             "entity": "User"
